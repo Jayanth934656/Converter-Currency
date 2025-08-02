@@ -1,39 +1,53 @@
-Overview
-The Currency Converter is a responsive web application that allows users to convert an amount from one currency to another using real-time exchange rates. It provides a user-friendly interface and fetches live rates from an external API.
+# 💱 Currency Converter Web App with Real-Time Exchange Rates
+
+*A responsive and user-friendly web application built with HTML, CSS, and JavaScript that allows users to convert amounts between different currencies using real-time exchange rates fetched from a public API.*
+
+## ✨ Features
+
+### 🌐 Real-Time Currency Conversion
+* Converts currency based on live exchange rates  
+* Displays both converted amount and current exchange rate  
+* Swap button to quickly reverse source and target currencies  
+
+### 🧩 Interactive UI
+* Clean and intuitive interface for easy use  
+* Input field with validation for conversion amount  
+* Dropdowns for selecting source and target currencies  
+
+### 📱 Responsive Design
+* Fully responsive layout for mobile and desktop  
+* Styled using Bootstrap and custom CSS  
+* Integrated with Font Awesome for icons  
+
+## 🛠 Technologies Used
+* HTML5  
+* CSS3 (with Bootstrap 5)  
+* JavaScript (ES6+)  
+* ExchangeRate API (for real-time exchange rates)  
+* Font Awesome (for icons)  
+
+## 📂 Project Structure
+
+* **currency-converter/**
+  * **src/**
+    * `Converter.js` – JavaScript code for currency conversion functionality  
+    * `index.html` – Main HTML document for the application  
+    * `styles.css` – CSS styles for the application  
+  * `README.md` – Documentation for the project  
+
+2.Open the project in your preferred code editor.
+
+3.Launch the app
+Open index.html in your web browser to view the application.
 
 
-Project Structure
-currency-converter
-src
-    Converter.js        # JavaScript code for currency conversion functionality
-    index.html          # Main HTML file for the application
-   styles.css          # CSS styles for layout and design
-README.md               # Project documentation
+📌 Usage
+Enter the amount you wish to convert.
 
+Select the source and target currencies using the dropdowns.
 
-1.Open the project in your preferred code editor.
+Click the Convert button to view the converted amount and exchange rate.
 
-2.Launch the application by opening index.html in any modern web browser.
-
-Usage
-
-.Enter the amount to convert in the input field.
-
-.Select the source currency and target currency from the dropdowns.
-
-.Click the Convert button to fetch the real-time exchange rate and see the converted amount.
-
-.Use the Swap button to instantly switch the selected currencies.
-
-Dependencies
-
-.The app uses the ExchangeRate API to fetch live conversion rates.
-
-.Requires an active internet connection for fetching updated exchange data.
-
-License
-
-.This project is open-source and free to use, modify, and distribute.
-
+Use the Swap button to reverse currencies quickly.
 
 
