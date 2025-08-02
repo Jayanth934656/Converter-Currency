@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="sketch-title">CURRENCY CONVERTER</h1>
+        <form id="converterForm" autocomplete="off">
+            <div class="sketch-row">
+                <div class="sketch-box currency-box">
+                    <label for="sourceCurrency" class="sketch-label">Source Currency</label>
+                    <select id="sourceCurrency" required>
+                        <option value="">Select source currency</option>
+                    </select>
+                </div>
+                <button type="button" id="swapBtn" class="sketch-swap" title="Swap Currencies">
+                    <span>&#8646;</span>
+                </button>
+                <div class="sketch-box currency-box">
+                    <label for="targetCurrency" class="sketch-label">Target Currency</label>
+                    <select id="targetCurrency" required>
+                        <option value="">Select target currency</option>
+                    </select>
+                </div>
+            </div>
+            <div class="sketch-box amount-box">
+                <input type="number" id="amount" placeholder="Enter Amount" required>
+            </div>
+            <button type="submit" id="convertBtn" class="sketch-convert-btn">
+                <span class="btn-text">Convert</span>
+                <span class="loading-spinner"></span>
+            </button>
+        </form>
+        <div class="sketch-box result-box">
+            <div class="result-label">Concerted Amount</div>
+            <div id="convertedAmount" class="converted-amount"></div>
+            <div id="exchangeRate" class="exchange-rate"></div>
+        </div>
+        <div id="messages">
+            <p id="errorMessage" class="error-message"></p>
+            <p id="successMessage" class="success-message"></p>
+        </div>
+    </div>
+    <script src="Converter.js"></script>
+</body>
+</html>
